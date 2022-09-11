@@ -1,0 +1,42 @@
+$grid-columns: 12;
+$grid-gutter-width: 1.5rem;
+$grid-row-columns: 6;
+
+// Sets breakpoints for a responsive grid
+$grid-breakpoints: (
+    xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px,
+    xxl: 1400px
+);
+
+// Sets max widths for containers for a responsive page
+$container-max-widths: (
+    sm: 540px,
+    md: 720px,
+    lg: 960px,
+    xl: 1140px,
+    xxl: 1320px
+);
+
+
+#cart {
+    order: 1;
+}
+
+#order-summary {
+    order: 4;
+}
+
+#saved-for-later {
+    order: 3;
+}
+
+/* Large smartphones and smaller devices*/
+@media screen and (max-width: 768px) {
+    #order-summary {
+        order: 2;
+    }
+}
