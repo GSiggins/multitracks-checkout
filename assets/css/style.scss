@@ -21,8 +21,18 @@ $container-max-widths: (
     xxl: 1320px
 );
 
-.footer-ul li {
+a {
     text-decoration: none;
+}
+
+footer {
+    background-color: #282828;
+    padding: 5px 15px 5px;
+}
+
+
+#subscribe-button {
+    background-color: #43B1E6;
 }
 
 #cart {

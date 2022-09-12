@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="./assets/css/style.scss">
   <title>MultiTracks</title>
 </head>
 
@@ -95,12 +96,12 @@
       </div>
     </div>
   </nav>
-  <div class="d-flex flex-column border">
-    <div class="d-flex border col-md-6">
-      <div class="border col-sm-12" id="cart">
+  <div class="d-flex border col-12">
+    <div class="d-flex flex-wrap col-12 flex-column border">
+      <div class="border col-md-6" id="cart">
         <div class="d-flex align-items-center justify-content-between">
           <div class="flex-shrink-0 m-4">
-            <img src="./img/graves-into-gardens.png" alt="graves into gardens album cover">
+            <img src="./assets/img/graves-into-gardens.png" alt="graves into gardens album cover">
           </div>
           <div class="flex-grow-1 ms-3">
             This is some content from a media component. You can replace this with any content and adjust it as needed.
@@ -108,7 +109,7 @@
         </div>
         <div class="d-flex align-items-center justify-content-between">
           <div class="flex-shrink-0 m-4">
-            <img src="./img/goodness-of-god.png" alt="goodness of god album cover">
+            <img src="./assets/img/goodness-of-god.png" alt="goodness of god album cover">
           </div>
           <div class="flex-grow-1 ms-3">
             This is some content from a media component. You can replace this with any content and adjust it as needed.
@@ -116,90 +117,94 @@
         </div>
       </div>
       <div class="border col-sm-12" id="saved-for-later">
+        <p>saved for later</p>
       </div>
-      <div class="d-flex border col-sm-12" id="order-summary">
+      <div class="d-flex border col-me-6" id="order-summary">
+        <p>order summary</p>
       </div>
     </div>
+    </div>
     <footer>
-    <div class="d-flex flex-reverse-column col-12">
-      <div id="products">
-        <h3>Products</h3>
-        <ul class="footer-ul">
-          <li><a href="#">The Connected Stage</a></li>
-          <li><a href="#">Church Streaming License</a></li>
-          <li><a href="#">Tracks</a></li>
-          <li><a href="#">Playback</a></li>
-          <li><a href="#">Playback for Mac</a></li>
-          <li><a href="#">Pad Player</a></li>
-          <li><a href="#">Playback Rentals</a></li>
-          <li><a href="#">Cloud Pro</a></li>
-          <li><a href="#">Rehearsal Mix</a></li>
-          <li><a href="#">Chart Builder</a></li>
-          <li><a href="#">Solo Practice</a></li>
-          <li><a href="#">Chart Pro</a></li>
-          <li><a href="#">Pro Presenter Templates</a></li>
-          <li><a href="#">Sounds</a></li>
-        </ul>
-      </div>
-      <div>
-        <div>
-          <h3>Resources</h3>
+      <div class="d-flex justify-content-center flex-reverse-column col-10 footer-items">
+        <div id="products">
+          <h3>Products</h3>
           <ul class="footer-ul">
-            <li><a href=#>Songs</a></li>
-            <li><a href=#>Sounds</a></li>
+            <li><a href="#">The Connected Stage</a></li>
+            <li><a href="#">Church Streaming License</a></li>
+            <li><a href="#">Tracks</a></li>
+            <li><a href="#">Playback</a></li>
+            <li><a href="#">Playback for Mac</a></li>
+            <li><a href="#">Pad Player</a></li>
+            <li><a href="#">Playback Rentals</a></li>
+            <li><a href="#">Cloud Pro</a></li>
+            <li><a href="#">Rehearsal Mix</a></li>
+            <li><a href="#">Chart Builder</a></li>
+            <li><a href="#">Solo Practice</a></li>
+            <li><a href="#">Chart Pro</a></li>
+            <li><a href="#">Pro Presenter Templates</a></li>
+            <li><a href="#">Sounds</a></li>
           </ul>
         </div>
         <div>
-          <h3>Company</h3>
-          <ul class="footer-ul">
-            <li><a href=#>About</a></li>
-            <li><a href=#>Careers</a></li>
-            <li><a href=#>Blog</a></li>
-            <li><a href=#>Partner Contact</a></li>
-          </ul>
-        </div>
-      </div>
-      <div>
-        <div>
-          <h3>Store</h3>
-          <ul class="footer-ul">
-            <li><a href=#>Buy Credits</a></li>
-            <li><a href=#>Free Content</a></li>
-            <li><a href=#>Request a Song</a></li>
-          </ul>
-        </div>
-        <div>
-          <h3>Extras</h3>
-          <ul class="footer-ul">
-            <li><a href=#>Sessions</a></li>
-            <li><a href=#>Testimonials</a></li>
-            <li><a href=#>Submit your content</a></li>
-          </ul>
-        </div>
-      </div>
-      <div>
-        <h3>Account</h3>
-        <ul class="footer-ul">
-          <li><a href=#>View Cart</a></li>
-          <li><a href=#>Organization</a></li>
-          <li><a href=#>My Profile</a></li>
-          <li><a href=#>Library</a></li>
-          <li><a href=#>Setlists</a></li>
-          <li><a href=#>Rehearsal Mix</a></li>
-          <li><a href=#>Custom Session</a></li>
-        </ul>
-      </div>
-      <div>
-        <h3>Subscribe to our Newsletter</h3>
-        <div class="input-group mb-3">
-          <input type="text" class="form-control" placeholder="Your email..." aria-label="subscriber-email" aria-describedby="button-addon2">
-          <button class="btn btn-outline-secondary" type="button" id="button-addon2">Subscribe</button>
+          <div id="resources">
+            <h3>Resources</h3>
+            <ul class="footer-ul">
+              <li><a href=#>Songs</a></li>
+              <li><a href=#>Sounds</a></li>
+            </ul>
+          </div>
+          <div id="company">
+            <h3>Company</h3>
+            <ul class="footer-ul">
+              <li><a href=#>About</a></li>
+              <li><a href=#>Careers</a></li>
+              <li><a href=#>Blog</a></li>
+              <li><a href=#>Partner Contact</a></li>
+            </ul>
+          </div>
         </div>
         <div>
-          <h3>Have a problem?</h3>
-          <p class="footer-ul"><a href=#>View FAQs or Contact our Support Team > </a></p>
+          <div id="store">
+            <h3>Store</h3>
+            <ul class="footer-ul">
+              <li><a href=#>Buy Credits</a></li>
+              <li><a href=#>Free Content</a></li>
+              <li><a href=#>Request a Song</a></li>
+            </ul>
+          </div>
+          <div id="extras">
+            <h3>Extras</h3>
+            <ul class="footer-ul">
+              <li><a href=#>Sessions</a></li>
+              <li><a href=#>Testimonials</a></li>
+              <li><a href=#>Submit your content</a></li>
+            </ul>
+          </div>
         </div>
-      </div>
+        <div id="account">
+          <h3>Account</h3>
+          <ul class="footer-ul">
+            <li><a href=#>View Cart</a></li>
+            <li><a href=#>Organization</a></li>
+            <li><a href=#>My Profile</a></li>
+            <li><a href=#>Library</a></li>
+            <li><a href=#>Setlists</a></li>
+            <li><a href=#>Rehearsal Mix</a></li>
+            <li><a href=#>Custom Session</a></li>
+          </ul>
+        </div>
+        <div id="sub-and-faq">
+          <h3>Subscribe to our Newsletter</h3>
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Your email..." aria-label="subscriber-email"
+              aria-describedby="button-addon2">
+            <button class="btn btn-outline-secondary" type="button" id="subscribe-button">Subscribe</button>
+          </div>
+          <div>
+            <h3>Have a problem?</h3>
+            <p class="footer-ul"><a href=#>View FAQs or Contact our Support Team > </a></p>
+          </div>
+        </div>
     </footer>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
