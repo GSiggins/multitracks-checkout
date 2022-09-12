@@ -21,6 +21,9 @@ $container-max-widths: (
     xxl: 1320px
 );
 
+.footer-ul li {
+    text-decoration: none;
+}
 
 #cart {
     order: 1;
